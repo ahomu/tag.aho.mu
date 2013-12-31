@@ -1,0 +1,21 @@
+{
+  "name": "KoaStudy",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "ahomu <mail@ayumusato.com>"
+  ],
+  "description": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/js/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.6"
+  }
+}

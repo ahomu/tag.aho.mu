@@ -1,0 +1,14 @@
+extends _layout
+
+block content
+  form(action="/admin/login" method="post")
+    fieldset
+      legend Login
+      if message
+        p=message
+      p
+        input(type="email" name="email" value="mail@ayumusato.com")
+      p
+        input(type="password" name="password" value="")
+      p
+        input(type="submit" value="Submit")

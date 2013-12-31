@@ -1,0 +1,7 @@
+extends _layout
+block content
+  div(ng-app="App")
+    h1 Koa Study
+    p= hoge
+    div(ng-controller="Tag")
+      p(ng-repeat="tag in tags", ng-click="onClickTag()", ng-model="tagName") {{tag.name}}

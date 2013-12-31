@@ -1,0 +1,43 @@
+{
+  "name": "KoaStudy",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate_user": "node ./bin/generate_user.js",
+    "get_articles": "node --harmony ./bin/get_articles_by_tag.js"
+  },
+  "engines": {
+    "node": "0.11.6"
+  },
+  "author": "ahomu",
+  "license": "MIT",
+  "dependencies": {
+    "koa-session": "~1.2.0",
+    "mongoose": "~3.8.3",
+    "koa-static": "1.4.1",
+    "koa-favicon": "~1.0.1",
+    "crypto": "0.0.3",
+    "co-views": "~0.1.0",
+    "koa-mount": "~1.2.2",
+    "lodash": "~2.4.1",
+    "koa-route": "~1.0.2",
+    "koa-logger": "~1.1.0",
+    "co-body": "0.0.1",
+    "jade": "~1.0.0",
+    "koa": "~0.2.1",
+    "inquirer": "~0.4.0",
+    "es6-promise": "~0.1.1",
+    "co": "~3.0.2",
+    "request": "~2.30.0",
+    "thunkify": "0.0.1",
+    "zlib": "~1.0.5"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-nodemon": "~0.1.2",
+    "grunt-node-inspector": "~0.1.2",
+    "grunt-concurrent": "~0.4.2"
+  }
+}

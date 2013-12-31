@@ -1,0 +1,12 @@
+extends _layout
+
+block content
+  div(ng-app="Admin")
+    h1 管理ページですよ
+
+    div(ng-controller="Tags")
+      tagitem(ng-repeat="tag in tags")
+
+      form(ng-submit="onSubmit()")
+        input(type="text", ng-model="name")
+        input(type="submit")
