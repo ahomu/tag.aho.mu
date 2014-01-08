@@ -31,6 +31,9 @@ app.use(serve(__dirname + '/../public'));
 app.use(favicon());
 app.use(parser());
 app.use(mount(app.adminPath, admin));
+if (process.env.NODE_ENV === 'development') {
+  app.use(require('koa-livereload')());
+}
 
 /**
  * Routings
